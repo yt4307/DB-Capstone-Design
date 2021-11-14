@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+
+<table>
+  <tr>
+    <td>Course name</td>
+    <td>Credit</td>
+  </tr>
+  {{#each course}}
+  <form method="post">
+    <tr>
+      <td>{{Cname}}</td>
+      <td>{{Credit}}</td>
+      <td style="border: none; margin-left: 10px;">
+        <button style="margin-left: 10px;" name='courseDelBtn' type="submit" value="{{Cname}}" formaction="/deleteCourse">
+          삭제
+        </button>
+      </td>
+    </tr>
+  </form>
+  {{/each}}
+</table>

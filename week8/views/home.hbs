@@ -1,0 +1,74 @@
+{{!-- html을 사용해 코드 작성 --}}
+<h1> Employee 데이터 삽입</h1>
+
+<form name="employee" method="post" action='/'>
+    <div>
+        <label for="fname">Fname</label>
+        <input id="fname" name="fname" type="text" required placeholder="Fname">
+    </div>
+    <div>
+        {{!-- 미들네임의 이니셜, 존 F. 케네디에서 F 같은거 --}}
+        <label for="minit">Minit</label>
+        <input id="minit" name="minit" type="text" placeholder="Minit">
+    </div>
+    <div>
+        <label for="lname">Lname</label>
+        <input id="lname" name="lname" type="text" required placeholder="Lname">
+    </div>
+    <div>
+        <label for="ssn">Ssn</label>
+        <input id="ssn" name="ssn" type="text" placeholder="Ssn">
+    </div>
+    <div>
+        <label for="bdate">Bdate</label>
+        <input id="bdate" name="bdate" type="text" placeholder="Bdate">
+    </div>
+    <div>
+        <label for="address">Address</label>
+        <input id="address" name="address" type="text" placeholder="Address">
+    </div>
+    <div>
+        <label for="sex">Sex</label>
+        <input id="sex" name="sex" type="text" placeholder="Sex">
+    </div>
+    <div>
+        <label for="salary">Salary</label>
+        <input id="salary" name="salary" type="text" placeholder="Salary">
+    </div>
+    <div>
+        <label for="super_ssn">Super_ssn</label>
+        <input id="super_ssn" name="super_ssn" type="text" placeholder="Super_ssn">
+    </div>
+    <div>
+        <label for="dno">Dno</label>
+        <input id="dno" name="dno" type="text" placeholder="Dno">
+    </div>
+    <div>
+        <input type="submit" value="삽입">
+    </div>
+</form>
+
+<br /><br />
+
+<h1>Department 데이터 삽입</h1>
+<form id="department" method="post" action='/'>
+    <div>
+        <label for="dname">Dname</label>
+        <input id="dname" name="dname" type="text" required placeholder="Dname">
+    </div>
+    <div>
+        <label for="dnumber">Dnumber</label>
+        <input id="dnumber" name="dnumber" type="text" placeholder="Dnumber">
+    </div>
+    <div>
+        <label for="mgr_ssn">Mgr_ssn</label>
+        <input id="mgr_ssn" name="mgr_ssn" type="text" required placeholder="Mgr_ssn">
+    </div>
+    <div>
+        <label for="mgr_start_date">Mgr_start_date</label>
+        <input id="mgr_start_date" name="mgr_start_date" type="text" required placeholder="Mgr_start_date">
+    </div>
+    <div>
+        <input type="submit" value="삽입">
+    </div>
+</form>

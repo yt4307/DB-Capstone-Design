@@ -1,0 +1,24 @@
+{
+  "name": "week-3",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -L --exec babel-node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express.js": "^1.0.0",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "nodemon": "^2.0.12"
+  }
+}

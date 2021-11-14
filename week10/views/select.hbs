@@ -1,0 +1,26 @@
+<h1>{{ title }}</h1>
+<table>
+  <tr>
+    <td>Dname</td>
+    <td>Dnumber</td>
+  </tr>
+  {{#each department}}
+  <tr>
+    <td>{{Dname}}</td>
+    <td>{{Dnumber}}</td>
+  </tr>
+  {{/each}}
+</table>
+
+<table>
+  <tr>
+    <td>Course name</td>
+    <td>Credit</td>
+  </tr>
+  {{#each course}}
+  <tr>
+    <td>{{Cname}}</td>
+    <td>{{Credit}}</td>
+  </tr>
+  {{/each}}
+</table>

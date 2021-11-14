@@ -1,0 +1,68 @@
+<!--
+ Copyright 2021 kms
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<style>
+    body {
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .frame {
+        border-radius: 15px;
+        box-sizing: border-box;
+        border: 1px solid #757575;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #id,
+    #passwd,
+    .btn {
+        font-size: 25px;
+    }
+
+    .pwd {
+        margin-top: 15px;
+    }
+
+    .btn {
+        width: 322px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+<div class="frame">
+    <h1>로그인</h1>
+    <form id="deparment" method="post" action='/'>
+        <div class="id">
+            <input id="id" name="id" type="text" required placeholder="아이디">
+        </div>
+        <div class="pwd">
+            <input id="passwd" name='password' type="password" required placeholder="비밀번호">
+        </div>
+        <button class='btn' type="submit">로그인</button>
+    </form>
+</div>

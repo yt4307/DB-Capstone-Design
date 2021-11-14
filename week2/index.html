@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<h1>Random Number Game</h1>
+	<div>
+		<h3 class="js-title">Generate a number between 0 and <span id="maxValue">0</span></h3>
+		<datalist id="number">
+			<option value="50"></option>
+			<option value="100"></option>
+			<option value="150"></option>
+			<option value="200"></option>
+		</datalist>
+		<!-- 슬라이드의 범위는 5~200 -->
+		<input oninput="showSliderValue(this.value)" list="number" id="js-range" type="range" min="5" max="200" value="5" step="5" />
+	</div>
+	<form id="js-guess">
+		<label>Guess the number:</label>
+		<input type="number" max="200" min="5" />
+		<button id="submit">Play!</button>
+	</form>
+	<div id="js-result">
+		<span></span>
+	</div>
+	<script src="test.js"></script>
+</body>
+
+</html>

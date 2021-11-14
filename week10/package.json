@@ -1,0 +1,21 @@
+{
+  "name": "week_8",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -L --exec babel-node ./src/index.js"
+  },
+  "author": "mskim",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "nodemon": "^2.0.12"
+  }
+}
